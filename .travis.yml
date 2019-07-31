@@ -68,13 +68,14 @@ branches:
   only:
     - master
     - next
+    - build
     - /^feat\//
 
 jobs:
   include:
     - stage: deploy
       name: Deploy to Github
-      if: (NOT type IN (pull_request)) AND (branch IN (master,next))
+      if: (NOT type IN (pull_request)) AND (branch IN (master,next,build))
       script: skip
       deploy:
         skip_cleanup: true
@@ -83,11 +84,11 @@ jobs:
         on:
           repo: LN-Zap/zap-desktop
           all_branches: true
-          condition: $TRAVIS_BRANCH =~ ^master|next$
+          condition: $TRAVIS_BRANCH =~ ^master|next|build$
 
     - os: osx
       name: Deploy to Github
-      if: (NOT type IN (pull_request)) AND (branch IN (master,next))
+      if: (NOT type IN (pull_request)) AND (branch IN (master,next,build))
       script: skip
       deploy:
         skip_cleanup: true
@@ -96,4 +97,4 @@ jobs:
         on:
           repo: LN-Zap/zap-desktop
           all_branches: true
-          condition: $TRAVIS_BRANCH =~ ^master|next$
+          condition: $TRAVIS_BRANCH =~ ^master|next|build$
