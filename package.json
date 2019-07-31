@@ -113,6 +113,9 @@
     "mac": {
       "category": "public.app-category.finance",
       "icon": "resources/icon.icns",
+      "hardenedRuntime": true,
+      "entitlements": "./resources/mac/entitlements.mac.inherit.plist",
+      "afterSign": "./scripts/afterSignHook.js",
       "target": [
         "dmg",
         "zip"
