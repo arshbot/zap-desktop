@@ -1474,12 +1474,12 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rebass/forms@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@rebass/forms/-/forms-4.0.5.tgz#4e0523796ab96db40dfb457988e97062b6f2f6dd"
-  integrity sha512-eX/zCcA3iuBNb6MzPnO/0g4v/23CkfM0JZpgEo1PI5EjqtwNRa4SudUEhZpr8EG4Go6TIwavLr5bBbSBv51DaQ==
+"@rebass/forms@4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@rebass/forms/-/forms-4.0.6.tgz#19a3af64f855baa65dec65aecadda5cd95a09dd7"
+  integrity sha512-20dHAlb5V0Na2HxCr73Jjoc4hD1ElimmlBpQtclXMoXUsjJ7ORdCNL1S9R54MX5f7iU2VrLGHU42eL7+nONNPQ==
   dependencies:
-    reflexbox "^4.0.5"
+    reflexbox "^4.0.6"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -14114,6 +14114,17 @@ reflexbox@^4.0.5:
     "@styled-system/css" "^5.0.0"
     "@styled-system/should-forward-prop" "^5.0.0"
     react "^16.8.6"
+    styled-system "^5.0.0"
+
+reflexbox@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/reflexbox/-/reflexbox-4.0.6.tgz#fc756d2cc1ca493baf9b96bb27dd640ad8154cf1"
+  integrity sha512-UNUL4YoJEXAPjRKHuty1tuOk+LV1nDJ2KYViDcH7lYm5yU3AQ+EKNXxPU3E14bQNK/pE09b1hYl+ZKdA94tWLQ==
+  dependencies:
+    "@emotion/core" "^10.0.0"
+    "@emotion/styled" "^10.0.0"
+    "@styled-system/css" "^5.0.0"
+    "@styled-system/should-forward-prop" "^5.0.0"
     styled-system "^5.0.0"
 
 refractor@^2.4.1:
